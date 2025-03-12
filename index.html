@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Manager</h1>
+        
+        <div class="input-section">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="add-btn">Add Expense</button>
+        </div>
+        
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="expense-body">
+                <!-- Expenses will be listed here -->
+            </tbody>
+        </table>
+        
+        <div class="summary-section">
+            <div>
+                <h3>Summary</h3>
+                <p>Total expenses: <span id="expense-count">0</span></p>
+            </div>
+            <div class="total-amount">
+                Total: ₹<span id="total-amount">0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
